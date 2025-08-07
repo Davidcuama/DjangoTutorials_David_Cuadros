@@ -1,0 +1,8 @@
+{% extends 'pages/base.html' %}
+{% block title %}{{ product.name }} – Online Store{% endblock %}
+{% block content %}
+<h2>{{ product.name }}</h2>
+<p>{{ product.description }}</p>
+<p class="fw-bold">Price: ${{ product.price }}</p>
+<a href="{% url 'index' %}" class="btn btn-secondary">Back</a>
+{% endblock %}
